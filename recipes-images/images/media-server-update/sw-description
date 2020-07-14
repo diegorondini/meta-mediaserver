@@ -1,0 +1,20 @@
+software =
+{
+	version = "1.0";
+	images: (
+		{
+			filename = "media-server-image.boot.img.zstd";
+			device = "/dev/mmcblk2p1";
+			sha256 = "@media-server-image.boot.img.zstd";
+			type = "raw";
+			compressed = "zstd";
+		},
+		{
+			filename = "media-server-image.root.img.zstd";
+			device = "/dev/mmcblk2p2";
+			sha256 = "@media-server-image.root.img.zstd";
+			type = "raw";
+			compressed = "zstd";
+		}
+	);
+}
